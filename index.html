@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Band Gap Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=poppins-bold>
+    <div class="container">
+        <h1>Band Gap Calculator</h1>
+        <form id="bandGapCalculator">
+          
+            <label for="wavelength"  >Wavelength (nm):</label>
+          
+            <input type="number" step="any" id="wavelength" class="form-field"required><br>
+            <label for="bandGap" >Band Gap Energy (eV):</label>
+            <input type="number" step="any" id="bandGap" class="form-field" required><br>
+            <button type="button" onclick="calculate()" class="button-86" role="button">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+  <div class="container">
+    <div class="card">
+      
+    <div class="card__content">
+      <h2>What is a band gap?</h2>
+      <p>Imagine atoms as little playgrounds where electrons love to play.<br> Now, these electrons can jump around from one playground to another. But here's the catch: <br><b>THEY NEED ENOUGH ENERGY TO JUMP FROM ONE PLAYGROUND TO ANOTHER. THIS ENERGY THEY NEED IS CALLED THE "BAND GAP".</b>
+<br><br>
+Think of it like this: Imagine you're at the bottom of a slide. You need enough energy to climb up to the top of the slide before you can whoosh down. <br>If the slide is too high, you might not have enough energy to climb up, so you can't slide down. That's just like the band gap in materials. If it's too big, electrons can't jump across, and electricity can't flow.
+<br>
+But if the slide isn't too high, you can climb up and have fun sliding down. Similarly, if the band gap isn't too big, electrons can jump across, and the material can conduct electricity.</p>
+    </div>
+  </div>
+    <br>
+    <h3 style="text-align:center;">THEREFORE...</h3>
+    <div class="container">
+      <div class="card">
+        <div class="card__content" style="font-weight:400;">Band gap is the energy difference between the top of the valence band and the bottom of the conduction band in a material. In insulators and semiconductors, electrons need a certain minimum energy (band gap energy) to move from the valence band to the conduction band and become mobile carriers of electrical current.<br> If this band gap is large, the material is an insulator because electrons can't easily jump across it. If the band gap is smaller, the material is a semiconductor because electrons can jump across and conduct electricity under certain conditions.</div>
+      </div>
+    </div>
+     <footer><p>Created by your fellow mate: </p><a href="mailto:varunify.777@gmail.com" style="color:#ffffff;">varunify.777@gmail.com</a></footer>
+    <script src="script.js"></script>
+</body>
+ 
+</html>
